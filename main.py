@@ -18,7 +18,7 @@ icecreamlist = [
 
 ]
 
-@app.route('/')
+@app.route('/icecream')
 def main():
     try:
         r = requests.get(endpoint)
@@ -33,3 +33,8 @@ def main():
     except:
         print('please try again')
     return render_template('icecreams.html', icecreamlist=icecreamlist)
+
+
+@app.route('/')
+def main1():
+    return render_template('home.html')
