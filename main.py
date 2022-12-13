@@ -34,3 +34,6 @@ def main():
         print('please try again')
     return render_template('icecreams.html', icecreamlist=icecreamlist)
 
+@app.route('/shoppingCart')
+def cart():
+    return render_template('shopCart.html')
