@@ -45,4 +45,6 @@ Date: December 13, 2022
 - Elijah and Jared worked on the home() function, home.html, and the shopping cart page.
 - Maxwelle worked on the hello() function, icecreams.html file, the cocktail API, and the ordering page.
 
+Github Repository: https://github.com/bryanFowles/205ProjectFinal
+
 """
