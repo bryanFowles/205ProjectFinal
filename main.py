@@ -30,6 +30,42 @@ def hello():
 def cart():
     return render_template('shopCart.html')
 
+@app.route('/longIsland')
+def longIsland():
+    return render_template('longIsland.html')
+
+@app.route('/410gone')
+def gone410():
+    return render_template('410gone.html')
+
+@app.route('/fifty')
+def fifty():
+    return render_template('fifty.html')
+
+@app.route('/blue501')
+def blue501():
+    return render_template('blue501.html')
+
+@app.route('/special69')
+def special69():
+    return render_template('special69.html')
+
+@app.route('/dayAtTheBeach')
+def dayAtTheBeach():
+    return render_template('dayAtTheBeach.html')
+
+@app.route('/aFurlong')
+def aFurlong():
+    return render_template('aFurlong.html')
+
+@app.route('/midsummernight')
+def midsummernight():
+    return render_template('midsummernight.html')
+
+@app.route('/madalay')
+def madalay():
+    return render_template('madalay.html')
+
 @app.route('/')
 def home():
     return render_template('home.html')
