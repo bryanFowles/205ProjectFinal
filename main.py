@@ -12,7 +12,8 @@ bootstrap = Bootstrap5(app)
 foods = [[], [], [], [], [], [], [], [], [],]
 endpoint =  'https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Ordinary_Drink'
 headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'}
-@app.route('/')
+
+@app.route('/icecream')
 def hello():
     try:
         r = requests.get(endpoint, headers=headers)
@@ -28,3 +29,8 @@ def hello():
 @app.route('/shoppingCart')
 def cart():
     return render_template('shopCart.html')
+
+@app.route('/')
+def home():
+    return render_template('home.html')
+
