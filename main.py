@@ -12,6 +12,7 @@ bootstrap = Bootstrap5(app)
 foods = [[], [], [], [], [], [], [], [], [],]
 endpoint =  'https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Ordinary_Drink'
 headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'}
+
 @app.route('/icecream')
 def hello():
     try:
@@ -32,3 +33,4 @@ def cart():
 @app.route('/')
 def home():
     return render_template('home.html')
+
